@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "jobsplus",
+  "version": "${version}",
+  "name": "Jobs+",
+  "description": "Adds jobs to Forge Minecraft.",
+  "authors": [
+    "DAQEM"
+  ],
+  "contact": {
+    "website": "https://daqem.com"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/jobsplus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.daqem.jobsplus.client.JobsPlusClient"
+    ],
+    "main": [
+      "me.daqem.jobsplus.JobsPlus"
+    ]
+  },
+  "mixins": [
+    "jobsplus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.2",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
